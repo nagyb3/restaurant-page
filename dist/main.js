@@ -10,13 +10,33 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact-load.js":
+/*!*****************************!*\
+  !*** ./src/contact-load.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"componentContact\": () => (/* binding */ componentContact)\n/* harmony export */ });\nfunction componentContact() {\r\n    const element = document.querySelector('#content');\r\n\r\n    while (element.firstChild) {\r\n        element.removeChild(element.lastChild);\r\n    }\r\n\r\n    const headerdiv = document.createElement('div');\r\n    headerdiv.classList.add('header');\r\n\r\n    const headerh1 = document.createElement('h1');\r\n    headerh1.textContent = 'Contact';\r\n    headerdiv.appendChild(headerh1);\r\n\r\n    element.appendChild(headerdiv);\r\n\r\n    const unorderedList = document.createElement('ul')\r\n\r\n    let li = document.createElement('li');\r\n    li.textContent = 'Phone: +123 4567'\r\n    unorderedList.appendChild(li);\r\n\r\n    element.appendChild(unorderedList);\r\n\r\n\r\n    return element\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/contact-load.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _page_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-load */ \"./src/page-load.js\");\n\r\n\r\nconsole.log('this is from index.js!!')\r\n\r\n;(0,_page_load__WEBPACK_IMPORTED_MODULE_0__.component)();\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _page_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-load */ \"./src/page-load.js\");\n/* harmony import */ var _contact_load__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact-load */ \"./src/contact-load.js\");\n/* harmony import */ var _menu_load__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu-load */ \"./src/menu-load.js\");\n\r\n\r\n\r\n\r\nconsole.log('this is from index.js!!')\r\n\r\n;(0,_page_load__WEBPACK_IMPORTED_MODULE_0__.component)();\r\n\r\nconst homeButton = document.querySelector('button.home');\r\n\r\nconst contactButton = document.querySelector('button.contact');\r\n\r\nconst menuButton = document.querySelector('button.menu');\r\n\r\nhomeButton.addEventListener('click', _page_load__WEBPACK_IMPORTED_MODULE_0__.component);\r\n\r\ncontactButton.addEventListener('click', _contact_load__WEBPACK_IMPORTED_MODULE_1__.componentContact);\r\n\r\nmenuButton.addEventListener('click', _menu_load__WEBPACK_IMPORTED_MODULE_2__.componentMenu)\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu-load.js":
+/*!**************************!*\
+  !*** ./src/menu-load.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"componentMenu\": () => (/* binding */ componentMenu)\n/* harmony export */ });\nfunction componentMenu() {\r\n    const element = document.querySelector('#content');\r\n\r\n    while (element.firstChild) {\r\n        element.removeChild(element.lastChild);\r\n    }\r\n\r\n    const headerdiv = document.createElement('div');\r\n    headerdiv.classList.add('header');\r\n\r\n    const headerh1 = document.createElement('h1');\r\n    headerh1.textContent = 'Our Menu';\r\n    headerdiv.appendChild(headerh1);\r\n\r\n    element.appendChild(headerdiv);\r\n\r\n\r\n    return element\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/menu-load.js?");
 
 /***/ }),
 
@@ -26,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"component\": () => (/* binding */ component)\n/* harmony export */ });\n/* harmony import */ var _images_restaurantimage_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/restaurantimage.jpg */ \"./images/restaurantimage.jpg\");\n\r\n\r\nfunction component() {\r\n    const element = document.querySelector('#content');\r\n\r\n    const headerdiv = document.createElement('div');\r\n    headerdiv.classList.add('header');\r\n\r\n    const headerh1 = document.createElement('h1');\r\n    headerh1.textContent = 'My restaurant';\r\n\r\n    headerdiv.appendChild(headerh1);\r\n    element.appendChild(headerdiv);\r\n\r\n    const myIcon = document.createElement('img');\r\n    myIcon.src = _images_restaurantimage_jpg__WEBPACK_IMPORTED_MODULE_0__;\r\n    myIcon.classList.add('restaurant-image');\r\n\r\n\r\n    element.appendChild(myIcon);\r\n\r\n\r\n\r\n    return element\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/page-load.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"component\": () => (/* binding */ component)\n/* harmony export */ });\n/* harmony import */ var _images_restaurantimage_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/restaurantimage.jpg */ \"./images/restaurantimage.jpg\");\n\r\n\r\nfunction component() {\r\n    const element = document.querySelector('#content');\r\n\r\n    while (element.firstChild) {\r\n        element.removeChild(element.lastChild);\r\n    }\r\n\r\n    const headerdiv = document.createElement('div');\r\n    headerdiv.classList.add('header');\r\n\r\n    const headerh1 = document.createElement('h1');\r\n    headerh1.textContent = 'My restaurant';\r\n\r\n    headerdiv.appendChild(headerh1);\r\n    element.appendChild(headerdiv);\r\n\r\n    const myIcon = document.createElement('img');\r\n    myIcon.src = _images_restaurantimage_jpg__WEBPACK_IMPORTED_MODULE_0__;\r\n    myIcon.classList.add('restaurant-image');\r\n\r\n\r\n    element.appendChild(myIcon);\r\n\r\n\r\n\r\n    return element\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/page-load.js?");
 
 /***/ }),
 

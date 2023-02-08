@@ -12,10 +12,13 @@ body {
     margin: 50px calc(50% - 200px / 2) 50px calc(50% - 200px / 2);
 }
 
-.header {
+div.header {
     background-color: darkgreen;
-    text-align: center;
-    height: 3rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 h1 {

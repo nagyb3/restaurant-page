@@ -1,6 +1,4 @@
-import Icon from '../images/restaurantimage.jpg';
-
-export function component() {
+export function componentContact() {
     const element = document.querySelector('#content');
 
     while (element.firstChild) {
@@ -11,18 +9,18 @@ export function component() {
     headerdiv.classList.add('header');
 
     const headerh1 = document.createElement('h1');
-    headerh1.textContent = 'My restaurant';
-
+    headerh1.textContent = 'Contact';
     headerdiv.appendChild(headerh1);
+
     element.appendChild(headerdiv);
 
-    const myIcon = document.createElement('img');
-    myIcon.src = Icon;
-    myIcon.classList.add('restaurant-image');
+    const unorderedList = document.createElement('ul')
 
+    let li = document.createElement('li');
+    li.textContent = 'Phone: +123 4567'
+    unorderedList.appendChild(li);
 
-    element.appendChild(myIcon);
-
+    element.appendChild(unorderedList);
 
 
     return element
